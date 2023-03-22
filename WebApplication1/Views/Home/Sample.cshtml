@@ -1,0 +1,26 @@
+﻿
+@model int[]
+
+@{
+    ViewData["Title"] = "Sample";
+}
+<h1>Sample</h1>
+<div>
+    <h2>Here is an example of a viewbag</h2>
+
+ @*  @{
+        for(int i=0; i < 10; i++)
+        {
+            <h3>@i</h3>
+        }
+    }  *@
+
+    <partial name ="_LoopView"/>
+
+   <h3>@ViewBag.message</h3>
+
+    
+</div>
+
+
+
